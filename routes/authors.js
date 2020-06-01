@@ -23,7 +23,7 @@ router.get('/', async(req,res)=>{
 
 //New authors route 
 router.get('/new',(req,res)=>{
-    res.render("authors/new");
+    res.render("authors/new",{author:new Author()});
 })
 
 // Create a author route
